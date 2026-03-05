@@ -1,0 +1,52 @@
+Host information
+----------------
+OS: Ubuntu 22.04.5 LTS (stable release)
+Image details: https://github.com/github/codespaces-host-images/blob/main/README.md
+----------------
+Configuration starting...
+Cloning...
+Creating container...
+$ devcontainer up --id-label Type=codespaces --workspace-folder /var/lib/docker/codespacemount/workspace/test-amd64-in-dockerfile --mount type=bind,source=/.codespaces/agent/mount/cache,target=/vscode --user-data-folder /var/lib/docker/codespacemount/.persistedshare --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --log-level trace --log-format json --update-remote-user-uid-default never --mount-workspace-git-root false --omit-config-remote-env-from-metadata --skip-non-blocking-commands --skip-post-create --config "/var/lib/docker/codespacemount/workspace/test-amd64-in-dockerfile/.devcontainer.json" --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --container-session-data-folder /workspaces/.codespaces/.persistedshare/devcontainers-cli/cache --secrets-file /root/.codespaces/shared/user-secrets-envs.json
+[181 ms] @devcontainers/cli 0.83.3. Node.js v18.20.8. linux 6.8.0-1044-azure x64.
+[756 ms] Error fetching image details: No manifest found for docker.io/********:latest.
+{"outcome":"error","message":"Command failed: docker pull chrmarti/test-amd64-in-dockerfile:latest","description":"An error occurred setting up the container."}
+Error: Command failed: docker pull chrmarti/test-amd64-in-dockerfile:latest
+    at U9 (/.codespaces/agent/bin/node_modules/@devcontainers/cli/dist/spec-node/devContainersSpecCLI.js:467:1277)
+    at RL (/.codespaces/agent/bin/node_modules/@devcontainers/cli/dist/spec-node/devContainersSpecCLI.js:467:1021)
+    at async AZ (/.codespaces/agent/bin/node_modules/@devcontainers/cli/dist/spec-node/devContainersSpecCLI.js:485:3870)
+    at async uC (/.codespaces/agent/bin/node_modules/@devcontainers/cli/dist/spec-node/devContainersSpecCLI.js:485:4989)
+    at async L5 (/.codespaces/agent/bin/node_modules/@devcontainers/cli/dist/spec-node/devContainersSpecCLI.js:666:205)
+    at async G5 (/.codespaces/agent/bin/node_modules/@devcontainers/cli/dist/spec-node/devContainersSpecCLI.js:665:15084)
+    at async /.codespaces/agent/bin/node_modules/@devcontainers/cli/dist/spec-node/devContainersSpecCLI.js:485:1188
+devcontainer process exited with exit code 1
+Failed to create container.
+Error: Command failed: docker pull chrmarti/test-amd64-in-dockerfile:latest
+Error code: 1302 (UnifiedContainersErrorFatalCreatingContainer)
+Container creation failed.
+
+Creating recovery container.
+Creating container...
+$ devcontainer up --id-label Type=codespaces --workspace-folder /var/lib/docker/codespacemount/workspace/test-amd64-in-dockerfile --mount type=bind,source=/.codespaces/agent/mount/cache,target=/vscode --user-data-folder /var/lib/docker/codespacemount/.persistedshare --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --log-level trace --log-format json --update-remote-user-uid-default never --mount-workspace-git-root false --omit-config-remote-env-from-metadata --skip-non-blocking-commands --skip-post-create --config "/var/lib/docker/codespacemount/workspace/test-amd64-in-dockerfile/.devcontainer.json" --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --container-session-data-folder /workspaces/.codespaces/.persistedshare/devcontainers-cli/cache --secrets-file /root/.codespaces/shared/user-secrets-envs.json
+[167 ms] @devcontainers/cli 0.83.3. Node.js v18.20.8. linux 6.8.0-1044-azure x64.
+[643 ms] Start: Run: docker run --sig-proxy=false -a STDOUT -a STDERR --mount type=bind,src=/var/lib/docker/codespacemount/workspace,dst=/workspaces --mount source=/root/.codespaces/shared,target=/workspaces/.codespaces/shared,type=bind --mount source=/var/lib/docker/codespacemount/.persistedshare,target=/workspaces/.codespaces/.persistedshare,type=bind --mount source=/.codespaces/agent/mount,target=/.codespaces/bin,type=bind --mount source=/mnt/containerTmp,target=/tmp,type=bind --mount type=bind,src=/.codespaces/agent/mount/cache,dst=/vscode -l Type=codespaces -e CODESPACES_RECOVERY_CONTAINER=******** -e CODESPACES=******** -e ContainerVersion=13 -e RepositoryName=test-amd64-in-dockerfile --label ContainerVersion=13 --hostname codespaces-09331b --add-host codespaces-09331b:127.0.0.1 --cap-add sys_nice --network host --entrypoint /bin/sh -l devcontainer.metadata=[{"id":"./local-features/git"},{"id":"ghcr.io/devcontainers/features/common-utils:2"},{"remoteUser":"vscode"},{"mounts":["source=/root/.codespaces/shared,target=/workspaces/.codespaces/shared,type=bind","source=/var/lib/docker/codespacemount/.persistedshare,target=/workspaces/.codespaces/.persistedshare,type=bind","source=/.codespaces/agent/mount,target=/.codespaces/bin,type=bind","source=/mnt/containerTmp,target=/tmp,type=bind"],"containerEnv":{"CODESPACES_RECOVERY_CONTAINER":"********","CODESPACES":"********","ContainerVersion":"13","RepositoryName":"test-amd64-in-dockerfile"},"remoteUser":"vscode"}] mcr.microsoft.com/devcontainers/base:alpine -c echo Container started
+Unable to find image 'mcr.microsoft.com/devcontainers/base:alpine' locally
+alpine: Pulling from devcontainers/base
+589002ba0eae: Pull complete 
+ec96344f6ec1: Pull complete 
+fd3e8e7098b1: Pull complete 
+a71d19dc0491: Pull complete 
+beedab6d2dc5: Pull complete 
+24a6a32017b9: Pull complete 
+c47cdaf2046d: Pull complete 
+Digest: sha256:2ff82b3874eec11a87738d76d30c087bcd389499ea67af4505b50adea8469a9c
+Status: Downloaded newer image for mcr.microsoft.com/devcontainers/base:alpine
+Container started
+Outcome: success User: vscode WorkspaceFolder: /workspaces/test-amd64-in-dockerfile
+devcontainer process exited with exit code 0
+Running blocking commands...
+$ devcontainer up --id-label Type=codespaces --workspace-folder /var/lib/docker/codespacemount/workspace/test-amd64-in-dockerfile --mount type=bind,source=/.codespaces/agent/mount/cache,target=/vscode --user-data-folder /var/lib/docker/codespacemount/.persistedshare --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --log-level trace --log-format json --update-remote-user-uid-default never --mount-workspace-git-root false --omit-config-remote-env-from-metadata --skip-non-blocking-commands --expect-existing-container --config "/var/lib/docker/codespacemount/workspace/test-amd64-in-dockerfile/.devcontainer.json" --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --container-session-data-folder /workspaces/.codespaces/.persistedshare/devcontainers-cli/cache --secrets-file /root/.codespaces/shared/user-secrets-envs.json
+[311 ms] @devcontainers/cli 0.83.3. Node.js v18.20.8. linux 6.8.0-1044-azure x64.
+Outcome: success User: vscode WorkspaceFolder: /workspaces/test-amd64-in-dockerfile
+devcontainer process exited with exit code 0
+Configuring codespace...
+Finished configuring codespace.
