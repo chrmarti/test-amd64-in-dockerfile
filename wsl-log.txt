@@ -1,0 +1,36 @@
+[2 ms] @devcontainers/cli 0.83.3. Node.js v22.21.1. linux 5.15.167.4-microsoft-standard-WSL2 x64.
+[2717 ms] Error fetching image details: No manifest found for docker.io/chrmarti/test-amd64-in-dockerfile:latest.
+Error response from daemon: no matching manifest for linux/amd64 in the manifest list entries: no match for platform in manifest: not found
+[3900 ms] Retrying (Attempt 0) with error 
+                          'Command failed: docker pull chrmarti/test-amd64-in-dockerfile:latest
+'
+Error response from daemon: no matching manifest for linux/amd64 in the manifest list entries: no match for platform in manifest: not found
+[6034 ms] Retrying (Attempt 1) with error 
+                          'Command failed: docker pull chrmarti/test-amd64-in-dockerfile:latest
+'
+Error response from daemon: no matching manifest for linux/amd64 in the manifest list entries: no match for platform in manifest: not found
+[8159 ms] Retrying (Attempt 2) with error 
+                          'Command failed: docker pull chrmarti/test-amd64-in-dockerfile:latest
+'
+Error response from daemon: no matching manifest for linux/amd64 in the manifest list entries: no match for platform in manifest: not found
+[10270 ms] Retrying (Attempt 3) with error 
+                          'Command failed: docker pull chrmarti/test-amd64-in-dockerfile:latest
+'
+Error response from daemon: no matching manifest for linux/amd64 in the manifest list entries: no match for platform in manifest: not found
+[12358 ms] Retrying (Attempt 4) with error 
+                          'Command failed: docker pull chrmarti/test-amd64-in-dockerfile:latest
+'
+[13363 ms] Command failed: docker inspect --type image chrmarti/test-amd64-in-dockerfile:latest
+[13363 ms] []
+[13363 ms] Error response from daemon: No such image: chrmarti/test-amd64-in-dockerfile:latest
+
+[13363 ms] Command failed: docker pull chrmarti/test-amd64-in-dockerfile:latest
+Error: Command failed: docker pull chrmarti/test-amd64-in-dockerfile:latest
+    at U9 (/home/chrmarti/.nvm/versions/node/v22.21.1/lib/node_modules/@devcontainers/cli/dist/spec-node/devContainersSpecCLI.js:467:1277)
+    at RL (/home/chrmarti/.nvm/versions/node/v22.21.1/lib/node_modules/@devcontainers/cli/dist/spec-node/devContainersSpecCLI.js:467:1021)
+    at async AZ (/home/chrmarti/.nvm/versions/node/v22.21.1/lib/node_modules/@devcontainers/cli/dist/spec-node/devContainersSpecCLI.js:485:3870)
+    at async uC (/home/chrmarti/.nvm/versions/node/v22.21.1/lib/node_modules/@devcontainers/cli/dist/spec-node/devContainersSpecCLI.js:485:4989)
+    at async L5 (/home/chrmarti/.nvm/versions/node/v22.21.1/lib/node_modules/@devcontainers/cli/dist/spec-node/devContainersSpecCLI.js:666:205)
+    at async G5 (/home/chrmarti/.nvm/versions/node/v22.21.1/lib/node_modules/@devcontainers/cli/dist/spec-node/devContainersSpecCLI.js:665:15084)
+    at async /home/chrmarti/.nvm/versions/node/v22.21.1/lib/node_modules/@devcontainers/cli/dist/spec-node/devContainersSpecCLI.js:485:1188
+{"outcome":"error","message":"Command failed: docker pull chrmarti/test-amd64-in-dockerfile:latest","description":"An error occurred setting up the container."}
