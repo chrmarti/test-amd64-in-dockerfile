@@ -1,3 +1,4 @@
 {
-	"image": "chrmarti/test-amd64-in-dockerfile:latest"
+	"image": "chrmarti/test-amd64-in-dockerfile:latest",
+	"runArgs": ["--platform", "linux/amd64"]
 }
